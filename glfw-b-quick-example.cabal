@@ -1,0 +1,21 @@
+name:                glfw-b-quick-example
+version:             0.1.0.0
+synopsis:            Port of the glfw quick example using the haskell glfw-b library
+description:         Port of the glfw quick example using the haskell glfw-b library. See <http://www.glfw.org/docs/3.0/quick.html#quick_example> for the original code
+homepage:            http://github.com/alpmestan/glfw-b-quick-example
+license:             BSD3
+license-file:        LICENSE
+author:              Alp Mestanogullari <alpmestan@gmail.com>
+maintainer:          Alp Mestanogullari <alpmestan@gmail.com>
+copyright:           2013 Alp Mestanogullari
+category:            Graphics
+build-type:          Simple
+cabal-version:       >=1.8
+
+executable glfw-b-quick-example
+  main-is:             Main.hs
+  -- other-modules:       
+  build-depends:       base >= 4 && < 5,
+                       GLFW-b == 1.*,
+                       OpenGL == 2.8.*
+  ghc-options:         -O2 -Wall
